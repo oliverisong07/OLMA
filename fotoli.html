@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="OLMA is the trusted marketplace for buying, selling, and promoting products online.">
+    <title>OLMA | Find it. Sell it. OLMA it.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header" id="site-header">
+        <div class="header-inner">
+            <a class="brand" href="#" aria-label="OLMA home">
+                <span class="brand-mark" aria-hidden="true">O</span>
+                <span>OLMA</span>
+            </a>
+
+            <div class="header-menu">
+                <nav class="main-nav" aria-label="Main navigation">
+                    <a class="nav-link" href="#home">Home</a>
+                    <a class="nav-link" href="#app">Marketplace</a>
+                    <a class="nav-link" href="#categories">Categories</a>
+                    <a class="nav-linke" href="#app">Sell on OLMA</a>
+                    <a class="nav-link" href="#app">Advertise</a>
+                    <a class="nav-link" href="#about">About</a>
+                    <!-- <a class="nav-link" href="#contact">Contact</a> -->
+                </nav>
+
+            <!-- <form class="search" role="search" onsubmit="return submitSearch(event)">
+                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg>
+                <input id="search-input" type="search" placeholder="Search products, users..." aria-label="Search products and users">
+                <button type="submit" aria-label="Submit search">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="m5 12 14 0M13 6l6 6-6 6"></path></svg>
+                </button>
+            </form> -->
+
+                <div class="header-actions">
+                    <a class="login-link" href="#sell">LOGIN</a>
+                    <a class="sell-button" href="#app">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg>
+                        Sell Now
+                    </a>
+                </div>
+            </div>
+
+            <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" onclick="toggleMenu()">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+      <marquee>  <div class="header-note">A better way to buy, sell, and grow online.</div></marquee>
+    </header>
+
+    <div class="hero" id="home">
+        
+        <div class="hero-content">
+            <div class="hero-title">
+                <span class="rocket-icon" aria-hidden="true">🚀</span>
+                Unlimited Sales
+            </div>
+            <b> Launch your <br>business on OLMA</b>
+            <div class="hero-description">
+                We help you reach millions of customers <br>and grow your brand with our powerful tools and services.<br> 
+                Start selling today and take your business to the next level!
+            </div>
+            <div class="hero-actions">
+                <button class="hero-button" onclick="window.location.href='#app'">Start Selling</button>
+                <button class="hero-button" onclick="window.location.href='#app'">Explore Marketplace</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <section class="home-about" id="about" aria-labelledby="home-about-title">
+        <div class="home-about-inner">
+            <div class="home-about-image">
+                <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&q=85" alt="Small business team working together around a table">
+            </div>
+            <div class="home-about-copy">
+                <p class="home-about-eyebrow">ABOUT OLMA</p>
+                <h2 id="home-about-title">A marketplace for good finds and big ideas.</h2>
+                <p>OLMA brings shoppers and sellers together in one place. We want finding something you need to feel simple, and sharing what you make to feel within reach.</p>
+                <p>Whether you are looking for your next great find or starting a business, OLMA is here to help make that connection.</p>
+                <a class="home-about-link" href="#app">
+                    Start selling
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="registration-section" id="sell" aria-labelledby="registration-title">
+        <div class="registration-container">
+            <div class="registration-intro">
+                <p class="registration-eyebrow">SELL ON OLMA</p>
+                <h2 id="registration-title">Be part of OLMA from day one.</h2>
+                <p>Create your account and start selling your products online. Reach more customers and grow your business with our marketplace tools.</p>
+            </div>
+
+            <form class="registration-form" id="registration-form">
+                <div class="registration-fields">
+                    <div class="registration-field">
+                        <label for="name">Surname</label>
+                        <input type="text" id="name" name="name" autocomplete="family-name" required>
+                    </div>
+                    <div class="registration-field">
+                        <label for="other-name">Other name</label>
+                        <input type="text" id="other-name" name="other-name" autocomplete="given-name">
+                    </div>
+                    <div class="registration-field registration-field-wide">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" autocomplete="email" required>
+                    </div>
+                    <div class="registration-field">
+                        <label for="password">Password</label>
+                        <div class="password-input-wrap">
+                            <input type="password" id="password" name="password" autocomplete="new-password" required>
+                            <button class="password-visibility-toggle" type="button" aria-label="Show password" aria-controls="password" aria-pressed="false">
+                                <svg class="eye-open-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.25 12s3.5-6.5 9.75-6.5 9.75 6.5 9.75 6.5-3.5 6.5-9.75 6.5S2.25 12 2.25 12Z"></path><circle cx="12" cy="12" r="2.5"></circle></svg>
+                                <svg class="eye-off-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 3 18 18M10.6 10.6a2 2 0 0 0 2.8 2.8"></path><path d="M9.9 5.3A10.8 10.8 0 0 1 12 5.5c6.25 0 9.75 6.5 9.75 6.5a17.4 17.4 0 0 1-3.1 3.9M6.2 6.2C3.65 8.05 2.25 12 2.25 12s3.5 6.5 9.75 6.5c1.05 0 2.02-.2 2.9-.53"></path></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="registration-field">
+                        <label for="confirm-password">Confirm password</label>
+                        <div class="password-input-wrap">
+                            <input type="password" id="confirm-password" name="confirm-password" autocomplete="new-password" required>
+                            <button class="password-visibility-toggle" type="button" aria-label="Show confirm password" aria-controls="confirm-password" aria-pressed="false">
+                                <svg class="eye-open-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.25 12s3.5-6.5 9.75-6.5 9.75 6.5 9.75 6.5-3.5 6.5-9.75 6.5S2.25 12 2.25 12Z"></path><circle cx="12" cy="12" r="2.5"></circle></svg>
+                                <svg class="eye-off-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 3 18 18M10.6 10.6a2 2 0 0 0 2.8 2.8"></path><path d="M9.9 5.3A10.8 10.8 0 0 1 12 5.5c6.25 0 9.75 6.5 9.75 6.5a17.4 17.4 0 0 1-3.1 3.9M6.2 6.2C3.65 8.05 2.25 12 2.25 12s3.5 6.5 9.75 6.5c1.05 0 2.02-.2 2.9-.53"></path></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <label class="registration-terms" for="agree-terms">
+                    <input type="checkbox" id="agree-terms" name="agree-terms" required>
+                    <span>I agree to the <span class="registration-terms-highlight">Terms &amp; Conditions</span> and <span class="registration-terms-highlight">Privacy Policy</span>.</span>
+                </label>
+                <p class="registration-status" id="registration-status" role="status" aria-live="polite" hidden></p>
+                <button class="registration-submit" type="submit">Create account</button>
+            </form>
+        </div>
+       
+    </section>
+
+    <section class="app-announcement" id="app" aria-labelledby="app-title">
+        <div class="app-announcement-inner">
+            <div class="app-announcement-copy">
+                <p class="app-eyebrow">OLMA, ON THE GO</p>
+                <h2 id="app-title">Your marketplace, <span>in your pocket.</span></h2>
+                <p>Discover great finds, shop your favorite sellers, and manage your business wherever you are. The OLMA app is on its way.</p>
+                <div class="app-features" aria-label="App features">
+                    <span>Shop anywhere</span>
+                    <span>Sell with ease</span>
+                </div>
+            </div>
+
+            <div class="app-phone-stage" aria-label="Preview of the OLMA app on a mobile phone">
+                <div class="app-phone" aria-hidden="true">
+                    <div class="app-phone-screen">
+                        <div class="app-phone-status"><span>9:41</span><span>● ● ▰</span></div>
+                        <div class="app-phone-welcome">
+                            <div class="app-phone-brand"><span class="app-phone-logo">O</span><span>OLMA</span></div>
+                            <p class="app-phone-heading">Welcome to OLMA</p>
+                            <p class="app-phone-copy">Discover great finds. Shop and sell with ease, wherever you are.</p>
+                            <div class="app-phone-cta" aria-hidden="true">Get started</div>
+                        </div>
+                        <div class="app-phone-home"></div>
+                    </div>
+                </div>
+                <span class="app-phone-spark app-phone-spark-one" aria-hidden="true">✳</span>
+                <span class="app-phone-spark app-phone-spark-two" aria-hidden="true">✦</span>
+            </div>
+        </div>
+        <div class="app-coming-soon" aria-label="Coming soon">
+            <span aria-hidden="true"></span>
+            <p>COMING SOON</p>
+            <span aria-hidden="true"></span>
+        </div>
+    </section>
+
+    <section class="founder-section" id="founder" aria-labelledby="founder-title">
+        <div class="founder-inner">
+            <div class="founder-portrait">
+                <img src="image/DSC_3282.JPG" alt="Oliver Clement, founder of OLMA">
+            </div>
+            <div class="founder-copy">
+                <p class="founder-eyebrow">A NOTE FROM THE FOUNDER</p>
+                <h2 id="founder-title">A marketplace built to bring people together.</h2>
+                <p>OLMA makes it easier to discover great finds and support the people who sell them. I’m building the app to make that experience feel simple, useful, and close at hand.</p>
+                <p class="founder-name">Oliver Clement</p>
+                <p class="founder-role">Founder, <span>OLMA</span></p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="site-footer-main">
+            <a class="footer-brand" href="#home" aria-label="OLMA home">
+                <span class="footer-brand-mark" aria-hidden="true">O</span>
+                <span>OLMA</span>
+            </a>
+            <p class="footer-tagline">Find it. Sell it. OLMA it.</p>
+            <nav class="footer-nav" aria-label="Footer navigation">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#app">The app</a>
+                <a href="#founder">Founder</a>
+            </nav>
+        </div>
+        <div class="site-footer-bottom">
+            <span>&copy; 2026 OLMA</span>
+            <span>Made for good finds and big ideas.</span>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase-config.js"></script>
+    <script src="ol.js"></script>
+</body>
+</html>
+    
